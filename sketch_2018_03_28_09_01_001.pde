@@ -1,4 +1,4 @@
-ArrayList<Crawler> myList = new ArrayList<Crawler>(); // the parentheses at the end call the constructor of the class.
+ArrayList<crawler> myList = new ArrayList<crawler>(); // the parentheses at the end call the constructor of the class.
 // arrayLists can dynamically change in size, unlike normal arrays.
 
 void setup()
@@ -7,7 +7,7 @@ void setup()
 
   for (int i = 0; i < 300; i++)
   {
-    Crawler myBoi = new Crawler(random(width), random(height)); // now we have exactly one crawler.
+    crawler myBoi = new crawler(random(width), random(height)); // now we have exactly one crawler.
     myList.add(myBoi);
   }
 }
@@ -35,6 +35,12 @@ class crawler
   float noise Location;
 
   // there's a difference between random and noise curves.
+  
+  crawler()
+  {
+    
+  }
+  
 
   void move()
   {
