@@ -84,3 +84,6 @@ class crawler
     rect(x, y, thisSize, thisSize);
   }
 }
+
+// interactive computing
+// craig kapp
