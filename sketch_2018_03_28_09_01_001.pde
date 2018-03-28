@@ -14,6 +14,8 @@ void setup()
 
 void draw()
 {
+  rectMode(CORNER); // set it back tot he corner mode, instead of from the center.
+  fill(0); // black background
 }
 
 class crawler
