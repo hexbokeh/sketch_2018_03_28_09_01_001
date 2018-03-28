@@ -5,7 +5,11 @@ void setup()
 {
   size(500, 500);
 
-  Crawler myBoi = new Crawler(random(width), random(height)); // now we have exactly one crawler.
+  for (int i = 0; i < 300; i++)
+  {
+    Crawler myBoi = new Crawler(random(width), random(height)); // now we have exactly one crawler.
+    myList.add(myBoi);
+  }
 }
 
 void draw()
