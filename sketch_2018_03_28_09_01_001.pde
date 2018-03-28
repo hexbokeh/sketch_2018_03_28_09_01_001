@@ -32,13 +32,14 @@ class crawler
   float x;
   float y;
   float thisSize;
-  float noise Location;
+  float noiseLocation;
 
   // there's a difference between random and noise curves.
   
-  crawler()
+  public crawler(float xPos, float yPos)
   {
-    
+    x = xPos;
+    y = yPos;
   }
   
 
