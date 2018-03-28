@@ -15,7 +15,15 @@ void setup()
 void draw()
 {
   rectMode(CORNER); // set it back tot he corner mode, instead of from the center.
-  fill(0); // black background
+  fill(0, 10); // black background
+  rect(0,0, width, height);
+  
+  for (int i = 0; i < myList.size(); i++)
+  {
+     myList.get(i).show();
+     myList.get(i).move();
+  }
+  
 }
 
 class crawler
