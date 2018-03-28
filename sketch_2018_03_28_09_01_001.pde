@@ -1,6 +1,11 @@
+ArrayList<Crawler> myList = new ArrayList<Crawler>(); // the parentheses at the end call the constructor of the class.
+// arrayLists can dynamically change in size, unlike normal arrays.
+
 void setup()
 {
   size(500, 500);
+
+  Crawler myBoi = new Crawler(random(width), random(height)); // now we have exactly one crawler.
 }
 
 void draw()
@@ -35,24 +40,19 @@ class crawler
 
     noiseLocation += 0.1;
   }
-  
+
   void show()
   {
     fill(thisColor);
-    
-    if (dist(x,y,width/2,height/2)<150)
+
+    if (dist(x, y, width/2, height/2)<150)
     {
-      thisSize = map(dist(ex,y,width/2, height/2), 0, 150, 10, 3);
-    }
-    
-    else thisSize = 3;
-    
+      thisSize = map(dist(ex, y, width/2, height/2), 0, 150, 10, 3);
+    } else thisSize = 3;
+
     noStroke(); // takes off the outline on the shape. it looks better without it.
     rectMode(CENTER); // draw the rectangle from the center.
-    
+
     rect(x, y, thisSize, thisSize);
-    
-    
   }
-  
 }
