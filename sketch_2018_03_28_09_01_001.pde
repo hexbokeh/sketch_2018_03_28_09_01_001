@@ -46,6 +46,12 @@ class crawler
 
   void move()
   {
+    
+    if (noise(noiseLocation)<0.35) x -=5;
+    else if (noise(noiseLocation)<0.5) y+=5;
+    else if (noise (noiseLocation) < 0.65) x+=5;
+    else y-=5;
+    
     if (x > width)
     {
       x = 0;
