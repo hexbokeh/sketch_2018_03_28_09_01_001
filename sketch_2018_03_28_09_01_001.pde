@@ -32,7 +32,8 @@ class crawler
   float x;
   float y;
   float thisSize;
-  float noiseLocation;
+  float noiseLocation = random(0, 10000);
+  float thisColor = random(50, 255);
 
   // there's a difference between random and noise curves.
   
@@ -68,7 +69,7 @@ class crawler
 
     if (dist(x, y, width/2, height/2)<150)
     {
-      thisSize = map(dist(ex, y, width/2, height/2), 0, 150, 10, 3);
+      thisSize = map(dist(x, y, width/2, height/2), 0, 150, 10, 3);
     } else thisSize = 3;
 
     noStroke(); // takes off the outline on the shape. it looks better without it.
