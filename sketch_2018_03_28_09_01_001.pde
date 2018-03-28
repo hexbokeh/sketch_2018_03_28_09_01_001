@@ -17,7 +17,7 @@ class crawler
 
   // there's a difference between random and noise curves.
 
-  void pickle()
+  void move()
   {
     if (x > width)
     {
@@ -48,6 +48,10 @@ class crawler
     else thisSize = 3;
     
     noStroke(); // takes off the outline on the shape. it looks better without it.
+    rectMode(CENTER); // draw the rectangle from the center.
+    
+    rect(x, y, thisSize, thisSize);
+    
     
   }
   
